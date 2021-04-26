@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 字体 */
+body, button, input, select, textarea {
+    /*font: 12px/1 微软雅黑, Tahoma, Helvetica, Arial, 宋体, sans-serif;*/
+    color: #333;
+    font: 12px/1 "Microsoft YaHei", Tahoma, Helvetica, Arial, SimSun, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* 浮动样式操作 */
+/* 左浮动 */
+.fl{
+    float: left;
+}
+
+/* 右浮动 */
+.fr{
+    float:right;
+}
+
+/* 清除浮动 */
+.cl{
+    overflow: hidden;
+}
+
+.clearfix{
+    content: '';
+    display: block;
+    clear: both;
+    *zoom:1;
+}
+
+/* 定位样式操作 */
+.abs{
+    position: absolute;
+}
+
+.rela{
+    position: relative;
+}

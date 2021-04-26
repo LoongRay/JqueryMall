@@ -1,0 +1,83 @@
+.nav{
+    background-color: #f3f5f7;
+    height: 44px;
+    line-height: 44px;
+}
+
+.nav .container{
+    height: 44px;
+    border-bottom: 1px solid rgb(170, 166, 166);
+}
+
+.container .left_nav >li >a{
+    display: inline-block;
+    margin-right: 10px;
+} 
+
+ul.fl.left_nav {
+    margin-left: 10px;
+}
+
+.left_nav li.login{
+    color: #f00;
+}
+
+.right_nav{
+    margin-right: 10px;
+}
+
+/* 下拉菜单样式 */
+.rela{
+    padding: 0 16px 0 12px;
+}
+.rela a.link {
+    height: 43px;
+    display: inline-block;
+    position: relative;
+}
+
+.rela:hover{
+    background-color: #fff;
+    border-left: 1px solid #cfcece;
+    border-right: 1px solid #cfcece;
+    border-bottom: 1px solid #cfcece;
+}
+.rela:hover .arrow{
+    background-image:url('../img/dropdown-arrow-active.png');
+}
+
+.rela .abs{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    left: -1px;
+    border-left: 1px solid #cfcece;
+    border-right: 1px solid #cfcece;
+    border-bottom: 1px solid #cfcece;
+}
+
+.rela:hover .abs{
+    display: block;
+}
+
+.rela .abs li{
+    padding: 0 16px 0 12px;
+}
+
+.rela .abs li:hover{
+    background-color: #f3f5f7;
+}
+
+.rela .abs li .list_item{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    /* 是否换行:不换行 */
+    white-space: nowrap;
+}
+
+li.fl.rela.categ:hover {
+    color: #f00;
+    background: none;
+    border: none;
+}
