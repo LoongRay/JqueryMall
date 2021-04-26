@@ -46,3 +46,10 @@ li{
 .rela{
     position: relative;
 }
+
+/* 文字超出字数范围,显示省略号 */
+.text-ellipsis{
+    text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+}

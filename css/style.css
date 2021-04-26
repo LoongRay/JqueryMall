@@ -1,3 +1,4 @@
+/* 1.顶部导航栏 */
 .nav{
     background-color: #f3f5f7;
     height: 44px;
@@ -6,7 +7,8 @@
 
 .nav .container{
     height: 44px;
-    border-bottom: 1px solid rgb(170, 166, 166);
+    border-bottom: 1px solid rgb(217 214 214);
+    box-sizing: border-box;
 }
 
 .container .left_nav >li >a{
@@ -26,7 +28,7 @@ ul.fl.left_nav {
     margin-right: 10px;
 }
 
-/* 下拉菜单样式 */
+/* 1-1下拉菜单样式 */
 .rela{
     padding: 0 16px 0 12px;
 }
@@ -54,6 +56,7 @@ ul.fl.left_nav {
     border-left: 1px solid #cfcece;
     border-right: 1px solid #cfcece;
     border-bottom: 1px solid #cfcece;
+    z-index: 10;
 }
 
 .rela:hover .abs{
@@ -80,4 +83,70 @@ li.fl.rela.categ:hover {
     color: #f00;
     background: none;
     border: none;
+}
+
+/* 2.搜索框 */
+.search_zone{
+    height: 124px;
+    width: 100%;
+    background-color: #f3f5f7;
+}
+.search_zone .container {
+    height: 100%;
+    position: relative;
+}
+.search_zone .logo {
+    background: url(../img/header-logo.png);
+    width: 136px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.search_zone .search{
+    position: absolute;
+    top: 50%;
+    left: 294px;
+    transform: translate(0, -50%);
+}
+
+.search .search_ipt{
+    width: 585px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: none;
+}
+
+.search .btn{
+    width: 73px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #07111b;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-left: -4px;
+}
+
+.search form{
+    position: relative;
+}
+
+.search .search_tips{
+    display: none;
+    position: absolute;
+    border: 1px solid #eee;
+}
+
+.search_tips li{
+    height: 24px;
+    line-height: 24px;
+    background-color: #fff;
+    width: 678px;
 }
